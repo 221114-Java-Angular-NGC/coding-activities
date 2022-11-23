@@ -1,0 +1,82 @@
+2022-11-23 08:32:00,465 INFO com.revature.Services.HandsOfTime [main] Calculating angle 324
+2022-11-23 08:32:00,477 INFO com.revature.Services.HandsOfTime [main] Calculating angle 0
+2022-11-23 08:32:00,480 INFO com.revature.Services.HandsOfTime [main] Calculating angle 0
+2022-11-23 08:32:00,483 INFO com.revature.Services.HandsOfTime [main] Calculating angle 0
+2022-11-23 08:32:00,502 INFO com.revature.Services.HandsOfTime [main] Calculating angle 90
+2022-11-23 08:32:00,507 INFO com.revature.Services.HandsOfTime [main] Calculating angle 6
+2022-11-23 08:32:00,508 INFO com.revature.Services.HandsOfTime [main] Calculating angle 60
+2022-11-23 08:32:00,510 INFO com.revature.Services.HandsOfTime [main] Calculating angle 90
+2022-11-23 08:32:00,512 INFO com.revature.Services.HandsOfTime [main] Calculating angle 90
+2022-11-23 08:32:00,514 INFO com.revature.Services.HandsOfTime [main] Calculating angle 108
+2022-11-23 08:33:59,836 INFO com.revature.Services.HandsOfTime [main] Calculating angle 324
+2022-11-23 08:33:59,840 INFO com.revature.Services.HandsOfTime [main] Angle was greater than 180
+2022-11-23 08:33:59,848 INFO com.revature.Services.HandsOfTime [main] Calculating angle 0
+2022-11-23 08:33:59,851 INFO com.revature.Services.HandsOfTime [main] Calculating angle 0
+2022-11-23 08:33:59,854 INFO com.revature.Services.HandsOfTime [main] Calculating angle 0
+2022-11-23 08:33:59,856 INFO com.revature.Services.HandsOfTime [main] Calculating angle 90
+2022-11-23 08:33:59,858 INFO com.revature.Services.HandsOfTime [main] Calculating angle 6
+2022-11-23 08:33:59,860 INFO com.revature.Services.HandsOfTime [main] Calculating angle 60
+2022-11-23 08:33:59,861 INFO com.revature.Services.HandsOfTime [main] Calculating angle 90
+2022-11-23 08:33:59,864 INFO com.revature.Services.HandsOfTime [main] Calculating angle 90
+2022-11-23 08:33:59,871 INFO com.revature.Services.HandsOfTime [main] Calculating angle 108
+2022-11-23 08:37:31,344 INFO com.revature.Services.HandsOfTime [main] This is the time given: 01:59
+2022-11-23 08:37:31,346 INFO com.revature.Services.HandsOfTime [main] This is the hour given: 1
+2022-11-23 08:37:31,346 INFO com.revature.Services.HandsOfTime [main] This is the time given: 59
+2022-11-23 08:37:31,346 INFO com.revature.Services.HandsOfTime [main] This is the angle: 30
+2022-11-23 08:37:31,346 INFO com.revature.Services.HandsOfTime [main] This is the angle: 354
+2022-11-23 08:37:31,346 INFO com.revature.Services.HandsOfTime [main] Calculated angle 324
+2022-11-23 08:37:31,346 INFO com.revature.Services.HandsOfTime [main] Angle was greater than 180
+2022-11-23 08:37:31,356 INFO com.revature.Services.HandsOfTime [main] This is the time given: 00:00
+2022-11-23 08:37:31,357 INFO com.revature.Services.HandsOfTime [main] This is the hour given: 0
+2022-11-23 08:37:31,357 INFO com.revature.Services.HandsOfTime [main] This is the time given: 0
+2022-11-23 08:37:31,357 INFO com.revature.Services.HandsOfTime [main] This is the angle: 0
+2022-11-23 08:37:31,357 INFO com.revature.Services.HandsOfTime [main] This is the angle: 0
+2022-11-23 08:37:31,357 INFO com.revature.Services.HandsOfTime [main] Calculated angle 0
+2022-11-23 08:37:31,360 INFO com.revature.Services.HandsOfTime [main] This is the time given: 06:30
+2022-11-23 08:37:31,361 INFO com.revature.Services.HandsOfTime [main] This is the hour given: 6
+2022-11-23 08:37:31,361 INFO com.revature.Services.HandsOfTime [main] This is the time given: 30
+2022-11-23 08:37:31,362 INFO com.revature.Services.HandsOfTime [main] This is the angle: 180
+2022-11-23 08:37:31,363 INFO com.revature.Services.HandsOfTime [main] This is the angle: 180
+2022-11-23 08:37:31,363 INFO com.revature.Services.HandsOfTime [main] Calculated angle 0
+2022-11-23 08:37:31,365 INFO com.revature.Services.HandsOfTime [main] This is the time given: 06:30
+2022-11-23 08:37:31,365 INFO com.revature.Services.HandsOfTime [main] This is the hour given: 6
+2022-11-23 08:37:31,366 INFO com.revature.Services.HandsOfTime [main] This is the time given: 30
+2022-11-23 08:37:31,366 INFO com.revature.Services.HandsOfTime [main] This is the angle: 180
+2022-11-23 08:37:31,366 INFO com.revature.Services.HandsOfTime [main] This is the angle: 180
+2022-11-23 08:37:31,366 INFO com.revature.Services.HandsOfTime [main] Calculated angle 0
+2022-11-23 08:37:31,369 INFO com.revature.Services.HandsOfTime [main] This is the time given: 00:15
+2022-11-23 08:37:31,370 INFO com.revature.Services.HandsOfTime [main] This is the hour given: 0
+2022-11-23 08:37:31,371 INFO com.revature.Services.HandsOfTime [main] This is the time given: 15
+2022-11-23 08:37:31,371 INFO com.revature.Services.HandsOfTime [main] This is the angle: 0
+2022-11-23 08:37:31,371 INFO com.revature.Services.HandsOfTime [main] This is the angle: 90
+2022-11-23 08:37:31,371 INFO com.revature.Services.HandsOfTime [main] Calculated angle 90
+2022-11-23 08:37:31,375 INFO com.revature.Services.HandsOfTime [main] This is the time given: 03:16
+2022-11-23 08:37:31,375 INFO com.revature.Services.HandsOfTime [main] This is the hour given: 3
+2022-11-23 08:37:31,375 INFO com.revature.Services.HandsOfTime [main] This is the time given: 16
+2022-11-23 08:37:31,375 INFO com.revature.Services.HandsOfTime [main] This is the angle: 90
+2022-11-23 08:37:31,375 INFO com.revature.Services.HandsOfTime [main] This is the angle: 96
+2022-11-23 08:37:31,376 INFO com.revature.Services.HandsOfTime [main] Calculated angle 6
+2022-11-23 08:37:31,383 INFO com.revature.Services.HandsOfTime [main] This is the time given: 04:30
+2022-11-23 08:37:31,383 INFO com.revature.Services.HandsOfTime [main] This is the hour given: 4
+2022-11-23 08:37:31,383 INFO com.revature.Services.HandsOfTime [main] This is the time given: 30
+2022-11-23 08:37:31,383 INFO com.revature.Services.HandsOfTime [main] This is the angle: 120
+2022-11-23 08:37:31,383 INFO com.revature.Services.HandsOfTime [main] This is the angle: 180
+2022-11-23 08:37:31,383 INFO com.revature.Services.HandsOfTime [main] Calculated angle 60
+2022-11-23 08:37:31,386 INFO com.revature.Services.HandsOfTime [main] This is the time given: 06:15
+2022-11-23 08:37:31,387 INFO com.revature.Services.HandsOfTime [main] This is the hour given: 6
+2022-11-23 08:37:31,387 INFO com.revature.Services.HandsOfTime [main] This is the time given: 15
+2022-11-23 08:37:31,387 INFO com.revature.Services.HandsOfTime [main] This is the angle: 180
+2022-11-23 08:37:31,387 INFO com.revature.Services.HandsOfTime [main] This is the angle: 90
+2022-11-23 08:37:31,387 INFO com.revature.Services.HandsOfTime [main] Calculated angle 90
+2022-11-23 08:37:31,389 INFO com.revature.Services.HandsOfTime [main] This is the time given: 00:15
+2022-11-23 08:37:31,390 INFO com.revature.Services.HandsOfTime [main] This is the hour given: 0
+2022-11-23 08:37:31,390 INFO com.revature.Services.HandsOfTime [main] This is the time given: 15
+2022-11-23 08:37:31,390 INFO com.revature.Services.HandsOfTime [main] This is the angle: 0
+2022-11-23 08:37:31,391 INFO com.revature.Services.HandsOfTime [main] This is the angle: 90
+2022-11-23 08:37:31,391 INFO com.revature.Services.HandsOfTime [main] Calculated angle 90
+2022-11-23 08:37:31,393 INFO com.revature.Services.HandsOfTime [main] This is the time given: 09:27
+2022-11-23 08:37:31,393 INFO com.revature.Services.HandsOfTime [main] This is the hour given: 9
+2022-11-23 08:37:31,393 INFO com.revature.Services.HandsOfTime [main] This is the time given: 27
+2022-11-23 08:37:31,394 INFO com.revature.Services.HandsOfTime [main] This is the angle: 270
+2022-11-23 08:37:31,395 INFO com.revature.Services.HandsOfTime [main] This is the angle: 162
+2022-11-23 08:37:31,395 INFO com.revature.Services.HandsOfTime [main] Calculated angle 108
