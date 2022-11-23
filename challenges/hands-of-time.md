@@ -18,7 +18,7 @@ hands_of_time(00:00)  // 0
 ```
 
 ## Tackling This Challenge
-1. Add your code to the 'mob.java' file to make the `hands_of_time` function work as expected.
+1. Create a solution file called 'mob.java' file and make the `hands_of_time` function work as expected.
 2. Create some unit test to see if your solution passes those tests.
 
 ## Requirements
