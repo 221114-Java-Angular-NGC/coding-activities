@@ -5,7 +5,7 @@ Given a clock time in hh:mm format, determine, to the nearest degree, the angle 
 ## Business Rules/Errata
 
 - Your solution will take in a single LocalTime value as input and must return the angle of degrees as a integer value.
-- Assume that the hour hand is in an absolute position.
+- Assume that the hour hand is in an absolute position (like on a basic face clock on the wall).
 
 ## Examples
 
