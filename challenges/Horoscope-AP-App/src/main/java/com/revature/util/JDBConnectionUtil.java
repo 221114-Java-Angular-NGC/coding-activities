@@ -1,4 +1,4 @@
-package JDBConnectionUtil;
+package com.revature.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 public class JDBConnectionUtil {
 
 	public static Logger Logger = LoggerFactory.getLogger(JDBConnectionUtil.class);
+	static final String JDBC_DRIVER = "org.h2.Driver";
 	
 	//establishing getConnection
 	public static Connection getConnection() {
@@ -18,10 +19,13 @@ public class JDBConnectionUtil {
 		Connection conn = null;
 		try {
 			//connection to the driver
-			conn = DriverManager.getConnection(System.getenv("data_base_url"), System.getenv("data_base_un"), System.getenv("data_pw"));
+			Class.forName(JDBC_DRIVER);
+			conn = DriverManager.getConnection("jdbc:h2:~/horoscope", "admin", "password");
 			
 		} catch (SQLException e) {
 			Logger.info("Exception occured in JDBConnectionUtil getConnection()");
+			e.printStackTrace();
+		} catch(Exception e) {
 			e.printStackTrace();
 		}
 		return conn;

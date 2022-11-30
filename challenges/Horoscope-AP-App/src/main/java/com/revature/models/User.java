@@ -3,12 +3,6 @@ package com.revature.models;
 import java.time.LocalDate;
 import java.util.Objects;
 
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
-
-
 public class User {
 
 	String userName;

@@ -7,11 +7,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.revature.models.User;
-
-import JDBConnectionUtil.JDBConnectionUtil;
+import com.revature.util.JDBConnectionUtil;
 
 public class UserDAOImpl implements UserDAO {
-	public static Logger Logger = LoggerFactory.getLogger(UserDAOImpl.class);
+	public static Logger logger = LoggerFactory.getLogger(UserDAOImpl.class);
+	
 	Connection conn = JDBConnectionUtil.getConnection();
 
 	
@@ -21,7 +21,7 @@ public class UserDAOImpl implements UserDAO {
 		try {
 			
 			//state our sql statement 
-			String sql = "insert into horoscope_users (username, password, email, birthday, zodiac_sign) values (?,?,?,?,?)";
+			String sql = "insert into z_users (username, password, email, birthday, zodiac_sign) values (?,?,?,?,?)";
 			
 			//sql statement
 			PreparedStatement pstmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
@@ -46,7 +46,7 @@ public class UserDAOImpl implements UserDAO {
 			
 		}catch(SQLException e) {
 			//checking for exception 
-			Logger.info("Exception occured in UserDAOImpl registar()");
+			logger.info("Exception occured in UserDAOImpl registar()");
 			System.out.print(e.getMessage());
 		}
 		
@@ -59,7 +59,7 @@ public class UserDAOImpl implements UserDAO {
 		
 		// checking to see if user_name and pass_word are not null
 		if(user_name == null || pass_word == null) {
-			Logger.info("User_name or Pass_word were null...");
+			logger.info("User_name or Pass_word were null...");
 			return false;
 		}
 		
@@ -68,10 +68,10 @@ public class UserDAOImpl implements UserDAO {
 		
 		//checking if username and password are the exact same
 		if(user_name.equals(user.getUserName())  && pass_word.equals(user.getPassWord()) ) {
-			Logger.info("Correct User_name or Pass_word");
+			logger.info("Correct User_name or Pass_word");
 			return true;
 		}
-		Logger.info("incorrect login User_name or Pass_word");
+		logger.info("incorrect login User_name or Pass_word");
 
 		
 		return false;
@@ -79,7 +79,17 @@ public class UserDAOImpl implements UserDAO {
 
 	@Override
 	public boolean delete(int id) {
-		// TODO Auto-generated method stub
+		try {
+		String sql = "DELETE FROM z_users WHERE id = ?;";
+		PreparedStatement ps = conn.prepareStatement(sql);
+		ps.setInt(1, id);
+		ps.executeUpdate();
+		
+		
+		} catch(SQLException e) {
+			logger.debug(e.getMessage());
+		}
+		
 		return false;
 	}
 
@@ -91,9 +101,48 @@ public class UserDAOImpl implements UserDAO {
 
 	@Override
 	public User viewInfo(int id) {
+		try {
+			User user = new User();
+			//state our sql statement to find user by id
+			String sql = "Select * From z_users where id = ?";
+			
+			//sql statement
+			PreparedStatement pstmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+			
+			//filling in the ? with actual values
+			pstmt.setInt(1, id);
+			
+			
+			
+
+			//gives us the generated key
+			ResultSet rs = pstmt.executeQuery();
+
+			
+			
+			rs.next();
+			
+			user.setUserName(rs.getString("username"));
+			user.setPassWord(rs.getString("password"));
+			user.seteMail(rs.getString("email"));
+			user.setBirthDay(rs.getDate("birthday").toLocalDate());
+			user.setZodiacSign(rs.getString("zodiac_sign"));
+			
+			return user;
+
+
+			
+		}catch(SQLException e) {
+			//checking for exception 
+			logger.info("Exception occured in UserDAOImpl registar()");
+			System.out.print(e.getMessage());
+		}
+		
 		// TODO Auto-generated method stub
+		
 		return null;
 	}
+	
 
 	@Override
 	public String getHoroscope(String sign) {
@@ -107,7 +156,7 @@ public class UserDAOImpl implements UserDAO {
 try {
 			User user = new User();
 			//state our sql statement to find username
-			String sql = "Select * From horoscope_users where username = ?";
+			String sql = "Select * From z_users where username = ?";
 			
 			//sql statement
 			PreparedStatement pstmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
@@ -138,7 +187,7 @@ try {
 			
 		}catch(SQLException e) {
 			//checking for exception 
-			Logger.info("Exception occured in UserDAOImpl registar()");
+			logger.info("Exception occured in UserDAOImpl registar()");
 			System.out.print(e.getMessage());
 		}
 		
